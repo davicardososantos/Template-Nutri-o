@@ -1,2 +1,2 @@
-# Template-Nutri-o
+# Template-Nutri
 Template desenvolvido para minha namorada
