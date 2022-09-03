@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* ELEMENTOS GERAIS */
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: .17em;
+    font-size: 2.0rem;
+}
+h5{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    letter-spacing: .15em;
+    font-size: 1.0rem;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: .05em;
+    font-size: .9rem;
+    line-height: 1.73;
+}
+
+/* LOGO DO CABEÇARIO*/
+.img-logo{
+    width: 200px;
+    padding: 30px 0 50px 0;
+}
+
+/* MENU */
+.nav-link {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: .3em;
+    font-size: .8em;
+    background-image: linear-gradient(
+      to right,
+      #A26A69,
+      #A26A69 50%,
+      #8EAB95 50%
+    ); 
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+.nav-item > .active{
+    background-image: linear-gradient(
+        to right,
+        #A26A69,
+        #A26A69 50%,
+        #A26A69 50%
+      );
+    background-position: 0;
+}  
+.nav-link:before{
+    content: '';
+    background: #A26A69;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: all 0.3s ease-in-out;
+}  
+.nav-item > .active:before{
+    width: 100%;
+}
+  
+.nav-link:hover {
+   background-position: 0;
+}
+  
+.nav-link:hover::before{
+    width: 100%;
+}
+.nav-link{
+    padding: 0 0 0 .3em;
+    margin: 0.5rem 1rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0 0 0 .3em;
+}
+
+/* SWIPER */
+.swiper {
+    width: 100%;
+    height: 30vw;
+}
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: right;
+    justify-content: right;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: right;
+    align-items: flex-start;
+ }
+ .swiper-slide div{
+    width: auto;
+    /* margin-right:  calc((var(--swiper-navigation-size)/ 44 * 27) + 10px + 160px); */
+    margin-right:  10vw;
+    margin-top: 7vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2vw;
+    text-align: left;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #8EAB95;
+ }
+ .swiper-slide div span{
+    font-weight: 800;
+    color: #8EAB95;
+ }
+ .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: #A26A69;
+}
+.swiper-pagination-bullet-active{
+    color: #A26A69;
+    background-color: #A26A69;
+}
+
+/* SOBRE */
+.sobre{
+    margin-top: 6vw;
+}
+.sobre__texto{
+    margin-top: 3vw;
+    width: 80%;
+}
+.sobre__foto img{
+    width: 46%;
+}
+
+
+/* RESPONSIVIDADE */
+@media only screen and (max-width:1200px) {
+    .swiper {
+        height: 30vw;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .swiper {
+        height: 35vw;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .swiper {
+        height: 55vw;
+    }
+    .swiper-slide {
+        height: 45vw;
+        margin-top: 10vw;
+    }
+    .swiper-slide div{
+        margin-top: -10vw;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 2.0vw;
+        height: 10vw;
+    }
+    .sobre{
+        text-align: center;
+    }
+    .sobre__texto{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .swiper {
+        height: 85vw;
+    }
+    .swiper-slide {
+        height: 70vw;
+        margin-top: 15vw;
+    }
+    .swiper-slide div{
+        margin-top: -15vw;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 3.4vw;
+        height: 15vw;
+    }
+}
