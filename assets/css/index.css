@@ -9,6 +9,12 @@ h1{
     letter-spacing: .17em;
     font-size: 2.0rem;
 }
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: .15em;
+    font-size: 1.0rem;
+}
 h5{
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
@@ -159,23 +165,72 @@ p{
 }
 .sobre__texto{
     margin-top: 3vw;
-    width: 80%;
+    width: 100%;
 }
 .sobre__foto img{
     width: 46%;
 }
 
+/* ESPECIALIDADES */
+.especialidade{
+    margin-top: 6vw;
+}
+.especialidade__icone{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 100%;
+    background-color: #8EAB95;
+    margin-bottom: 1vw;
+}
+.especialidade__icone img{
+    width: 50%;
+    margin: 25%;
+}
+.especialidade--titulo{
+    margin-top: 6vw;
+    padding: 3vw 0;
+    background-color: #8eab9533;
+}
 
 /* RESPONSIVIDADE */
+@media only screen and (max-width:1600px) {
+    .sobre__texto{
+        width: 70%;
+    }
+    .sobre__foto img{
+        width: 45%;
+    }
+}
 @media only screen and (max-width:1200px) {
     .swiper {
         height: 30vw;
+    }
+    .sobre__texto{
+        width: 80%;
+    }
+    .sobre__foto img{
+        width: 55%;
     }
 }
 
 @media only screen and (max-width:1024px) {
     .swiper {
         height: 35vw;
+    }
+    .sobre__texto{
+        width: 80%;
+    }
+    .sobre__foto img{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .sobre__texto{
+        width: 100%;
+    }
+    .sobre__foto img{
+        width: 80%;
     }
 }
 
