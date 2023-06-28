@@ -1,178 +1,303 @@
 <!doctype html>
 <html lang="pt">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/index.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Amanda Sales - Nutricionista</title>
-  </head>
-  <body>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/index.css">
+
+  <title>Amanda Sales - Nutricionista</title>
+</head>
+
+<body>
+  <div class="container">
+    <img src="assets/img/logo.png" class="img-fluid mx-auto d-block img-logo" alt="Logo">
+  </div>
+  <!-- MENU -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SOBRE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SERVIÇOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CLIENTES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FOTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTATO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SWIPER -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url('assets/img/banner-nutri-amanda-1.jpeg')">
+        <div>
+          Comer bem é o suficiente para nutri o corpo, <br>
+          <span>trazer felicidade e qualidade de vida.</span><br>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image:url('assets/img/banner-nutri-amanda-2.jpeg')">
+        <div>
+          Que seu remédio seja seu alimento, <br>
+          <span>e que seu alimento seja seu remédio.</span><br>
+          <!-- <small>HIPÓCRATES</small> -->
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- SOBRE -->
+
+  <div class="container sobre">
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+        <h1>AMANDA SALES</h1>
+        <h5>CRN3-69303P</h5>
+
+        <p class="sobre__texto">
+          Sou a nutricionista Amanda Sales, formada pela UNIP, apaixonada por alimentação saudável e pela vida.Busco
+          incentivar e orientar as pessoas a fazerem as melhores escolhas alimentares com equilíbrio e para não
+          precisarem passar por restrições tão severas, pois além de proporcionar momentos de prazer são também capazes
+          de tratar sintomas e curar doenças.
+        </p>
+
+      </div>
+      <div class="col-md-6 sobre__foto" data-aos="zoom-in-left" data-aos-duration="1000">
+        <img src="assets/img/nutri-amanda.png" class="img-fluid mx-auto d-block" alt="Nutricionista Amanda Sales">
+      </div>
+    </div>
+  </div>
+
+  <!-- ESPECIALIDADES -->
+
+  <div class="especialidade--titulo">
     <div class="container">
-        <img src="assets/img/logo.png" class="img-fluid mx-auto d-block img-logo" alt="Logo">
-    </div>
-    <!-- MENU -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">SOBRE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">SERVIÇOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CLIENTES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FOTOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTATO</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- SWIPER -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background-image:url('assets/img/banner-nutri-amanda-1.jpeg')">
-          <div>
-            Comer bem é o suficiente para nutri o corpo, <br>
-            <span>trazer felicidade e qualidade de vida.</span><br>
-          </div>
-        </div>
-        <div class="swiper-slide" style="background-image:url('assets/img/banner-nutri-amanda-2.jpeg')">
-          <div>
-            Que seu remédio seja seu alimento, <br>
-            <span>e que seu alimento seja seu remédio.</span><br>
-            <!-- <small>HIPÓCRATES</small> -->
-          </div>
-        </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-    <!-- SOBRE -->
-
-    <div class="container sobre">
       <div class="row">
-        <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
-          <h1>AMANDA SALES</h1>
-          <h5>CRN3-69303P</h5>
-
-          <p class="sobre__texto">
-            Sou a nutricionista Amanda Sales, formada pela UNIP, apaixonada por alimentação saudável e pela vida.Busco incentivar e orientar as pessoas a fazerem as melhores escolhas alimentares com equilíbrio e para não  precisarem passar por restrições tão severas, pois além de proporcionar momentos de prazer são também capazes de tratar sintomas e curar doenças.
-          </p>
-
-        </div>
-        <div class="col-md-6 sobre__foto" data-aos="zoom-in-left" data-aos-duration="1000">
-          <img src="assets/img/nutri-amanda.png" class="img-fluid mx-auto d-block" alt="Nutricionista Amanda Sales">
+        <div class="col-md-12 text-center">
+          <h1>Como posso te ajudar?</h1>
+          <h5>A alimentação saudável traz benefícios para a saúde.</h5>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- ESPECIALIDADES -->
+  <div class="container especialidade">
+    <div class="row">
+      <div class="col-md-3 text-center">
+        <div class="d-flex justify-content-center">
+          <div class="especialidade__icone">
+            <img src="assets/img/icone-nutri-online.png">
+          </div>
+        </div>
+        <h3>NUTRIÇÃO ONLINE</h3>
+        <p>Orientação nutricional para quem não tem tempo para consulta presencial.</p>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="d-flex justify-content-center">
+          <div class="especialidade__icone">
+            <img src="assets/img/icone-clinica.png">
+          </div>
+        </div>
+        <h3>EMAGRECIMENTO</h3>
+        <p>Estratégias reais para um emagrecimento saudável, sustentável e manutenção do peso.</p>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="d-flex justify-content-center">
+          <div class="especialidade__icone">
+            <img src="assets/img/icone-emagrecimento.png">
+          </div>
+        </div>
+        <h3>NUTRIÇÃO CLÍNICA</h3>
+        <p>Melhora da saúde, acompanhamento de doenças, alergias e intolerâncias.</p>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="d-flex justify-content-center">
+          <div class="especialidade__icone">
+            <img src="assets/img/icone-reeducacao.png">
+          </div>
+        </div>
+        <h3>REEDUCAÇÃO ALIMENTAR</h3>
+        <p>Sem dúvidas, a melhor estratégia para uma vida saudável, onde nada é proibido e o equilíbrio é a base.</p>
+      </div>
+    </div>
+  </div>
 
-    <div class="especialidade--titulo">
-      <div class="container">
+  <!-- CONTATO -->
+
+  <div class="contato--titulo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Entre em contato</h1>
+          <h5>Agende uma consulta preenchendo o formulário abaixo e entraremos em contato para marcar o melhor horário.
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container contato">
+    <div class="row">
+      <div class="col-md-12">
         <div class="row">
-          <div class="col-md-12 text-center">
-            <h1>Como posso te ajudar?</h1>
-            <h5>A alimentação saudável traz benefícios para a saúde.</h5>
+
+          <div class="col-md-6 text-start">
+            <div class="row">
+              <div class="col-auto d-flex justify-content-center align-items-center">
+                <div class="contato__icone">
+                  <img src="assets/img/icon-map-marker.png">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <p>
+                  <b>CONSULTÓRIO</b><br>
+                  Santana de Parnaíba - SP
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 text-start">
+            <div class="row">
+              <div class="col-auto d-flex justify-content-center align-items-center">
+                <div class="contato__icone">
+                  <img src="assets/img/icon-email.png">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <p>
+                  <b>E-MAIL</b><br>
+                  nutricionistaamandasales@gmail.com
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 text-start">
+            <div class="row">
+              <div class="col-auto d-flex justify-content-center align-items-center">
+                <div class="contato__icone">
+                  <img src="assets/img/icon-telephone.png">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <p>
+                  <b>TELEFONE/WHATS</b><br>
+                  (11) 99999-9999
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 text-start">
+            <div class="row">
+              <div class="col-auto d-flex justify-content-center align-items-center">
+                <div class="contato__icone">
+                  <img src="assets/img/icon-clock.png">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <p>
+                  <b>HORÁRIO DE ATENDIMENTO</b><br>
+                  Consulte agenda! Me chame no whatsapp
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <div class="col-md-6 offset-md-3">
+        <form>
+          <fieldset>
+            <legend>
+              <h2>AGENDE SUA CONSULTA</h2>
+            </legend>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="telefone" class="form-label">Telefone</label>
+              <input type="tel" class="form-control" id="telefone" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-one">Enviar</button>
+          </fieldset>
+        </form>
 
-    <div class="container especialidade">
-      <div class="row">
-        <div class="col-md-3 text-center">
-          <div class="d-flex justify-content-center">
-            <div class="especialidade__icone">
-              <img src="assets/img/icone-nutri-online.png">
-            </div>
-          </div>
-          <h3>NUTRIÇÃO ONLINE</h3>
-          <p>Orientação nutricional para quem não tem tempo para consulta presencial.</p>
-        </div>
-        <div class="col-md-3 text-center">
-          <div class="d-flex justify-content-center">
-            <div class="especialidade__icone">
-              <img src="assets/img/icone-clinica.png">
-            </div>
-          </div>
-          <h3>EMAGRECIMENTO</h3>
-          <p>Estratégias reais para um emagrecimento saudável, sustentável e manutenção do peso.</p>
-        </div>
-        <div class="col-md-3 text-center">
-          <div class="d-flex justify-content-center">
-            <div class="especialidade__icone">
-              <img src="assets/img/icone-emagrecimento.png">
-            </div>
-          </div>
-          <h3>NUTRIÇÃO CLÍNICA</h3>
-          <p>Melhora da saúde, acompanhamento de doenças, alergias e intolerâncias.</p>
-        </div>
-        <div class="col-md-3 text-center">
-          <div class="d-flex justify-content-center">
-            <div class="especialidade__icone">
-              <img src="assets/img/icone-reeducacao.png">
-            </div>
-          </div>
-          <h3>REEDUCAÇÃO ALIMENTAR</h3>
-          <p>Sem dúvidas, a melhor estratégia para uma vida saudável, onde nada é proibido e o equilíbrio é a base.</p>
-        </div>
       </div>
     </div>
+  </div>
 
-    <!-- SCRIPTS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Initialize AOS -->
-    <script>
-      AOS.init();
-    </script>
-  </body>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
